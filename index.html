@@ -54,6 +54,97 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="mobile-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-ul">
+              <li class="mobile-menu-li">
+                <a href="./index.html" class="mobile-link current">Studio</a>
+              </li>
+              <li class="mobile-menu-li">
+                <a href="#" class="mobile-link">Portfolio</a>
+              </li>
+              <li class="mobile-menu-li">
+                <a href="#" class="mobile-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mobile-menu-list-address">
+              <li>
+                <a href="mailto:info@devstudio.com" class="mobile-link-address"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="mobile-link-address current"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-item-icon-wrapper">
+            <li class="mobile-icon-li">
+              <a href="#" class="mobile-item-icon-a">
+                <svg
+                  class="mobile-item-icon"
+                  width="16"
+                  height="16"
+                  aria-label="icon-instagram"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-icon-li">
+              <a href="#" class="mobile-item-icon-a">
+                <svg
+                  class="mobile-item-icon"
+                  width="16"
+                  height="16"
+                  aria-label="icon-twitter"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-icon-li">
+              <a href="#" class="mobile-item-icon-a">
+                <svg
+                  class="mobile-item-icon"
+                  width="16"
+                  height="16"
+                  aria-label="icon-facebook"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-icon-li">
+              <a href="#" class="mobile-item-icon-a">
+                <svg
+                  class="mobile-item-icon"
+                  width="16"
+                  height="16"
+                  aria-label="icon-linkedin"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -403,7 +494,7 @@
         </div>
       </section>
       <!-- Portfolio-->
-      <section class="portfolio-con">
+      <section class="portfolio-con hidden">
         <div class="container div-container">
           <h2 class="section-portfolio">Our Portfolio</h2>
           <ul class="portfolio-ul">
@@ -525,7 +616,7 @@
         </div>
       </section>
     </main>
-    <footer class="finish">
+    <footer class="finish hidden">
       <div class="container footer-con">
         <div class="footer-con-logo">
           <a href="./index.html" class="footer-blue"
@@ -591,7 +682,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop hidden">
       <div class="modal">
         <button class="button-close" type="button">
           <svg class="modal-close" width="8" height="8">
