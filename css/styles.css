@@ -93,6 +93,9 @@ body {
     text-transform: uppercase;
     color: #4d5ae5;
 }
+.page-logo {
+    color: #2e2f42;
+}  
 .header-logo{
     padding: 16px 0;
     display: block;
@@ -124,6 +127,8 @@ color: #2e2f42;
     }
     .header-logo{
         padding: 24px 0;
+    }
+    .page-logo{
         margin-right: 120px;
     }
     .page-address {
@@ -565,13 +570,14 @@ padding: 120px 0;
 .team-con {
     display: flex;
     flex-direction: column;
+    padding: 96px 28px;
 }
 
 .team-ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 24px;
+    gap: 72px;
 }
 
 .head-team {
@@ -671,7 +677,6 @@ padding: 120px 0;
 }
 @media screen and (min-width:768px) {
     .head-team{
-        padding: 96px 0;
     }
     .team-ul {
     display: flex;
@@ -685,13 +690,14 @@ padding: 120px 0;
 
 .team-ul {
     flex-direction: row;
+    gap:24px;
 }
 
 .team-con {
+    padding: 120px 16px;
     margin: auto;
 }
 .head-team{
-    padding: 120px 0;
 }
 .team-list {
     width: calc((100% - 72px)/4);
@@ -700,7 +706,7 @@ padding: 120px 0;
 /*SECTION-PORTFOLIO*/
 .portfolio-con {
     flex-direction: column;
-    padding: 96px 0;
+    padding: 96px 16px;
 }
 
 .div-container {
@@ -788,6 +794,9 @@ padding: 120px 0;
 
 }
 @media screen and (min-width:768px) {
+    .portfolio-con{
+            padding: 96px 0;
+    }
     .portfolio-ul{
         column-gap: 24px;
         row-gap: 72px;
@@ -927,11 +936,12 @@ padding: 120px 0;
 .footer-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
 }
 
 .footer-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     background-color: transparent;
     font-size: 12px;
@@ -963,7 +973,7 @@ padding: 120px 0;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    min-width: 165px;
+    max-width: 165px;
     border-radius: 4px;
     padding: 8px 24px;
     background: #4d5ae5;
@@ -993,6 +1003,9 @@ padding: 120px 0;
         row-gap: 72px;
         padding-left: 108px;
     }
+    .footer-input{
+            width: 264px;
+    }
     .footer-con-logo{
         justify-content: flex-start;
             align-items: flex-start;
@@ -1010,6 +1023,7 @@ padding: 120px 0;
     }
     .footer-form{
         flex-direction: row;
+        gap:24px;
     }
 }
 
@@ -1076,8 +1090,7 @@ padding: 120px 0;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 288px;
-    height: 80%;
-    min-height: 623px;
+    max-height: 623px;
     overflow: auto;
     padding: 72px 16px 16px 16px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -1287,7 +1300,7 @@ padding: 120px 0;
 .modal{
     width: 408px;
     padding: 72px 24px 24px 24px;
-    min-height: 584px;
+    max-height: 584px;
 }
 
 .form-custom-checkbox{
